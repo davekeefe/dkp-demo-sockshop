@@ -33,6 +33,8 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: tmp-volume
+      imagePullSecrets:
+      - name: docker-cred
       volumes:
         - name: tmp-volume
           emptyDir:

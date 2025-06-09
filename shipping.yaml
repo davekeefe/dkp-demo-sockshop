@@ -48,6 +48,8 @@ spec:
         - name: tmp-volume
           emptyDir:
             medium: Memory
+      imagePullSecrets:
+      - name: docker-cred
       nodeSelector:
         beta.kubernetes.io/os: linux
 ---
